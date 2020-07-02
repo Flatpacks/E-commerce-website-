@@ -8,3 +8,7 @@ import (
 
 func main() {
 	// run workers
+	worker := os.Args[1]
+	switch worker {
+	case "email":
+		worker
