@@ -11,4 +11,8 @@ func main() {
 	worker := os.Args[1]
 	switch worker {
 	case "email":
-		worker
+		workers.SendEmailWorker()
+	case "watch":
+		workers.WatchCryptoWorker()
+	}
+}
