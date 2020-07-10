@@ -8,4 +8,9 @@ import (
 
 // Initialize initialises the database
 func Initialize(filepath string) *sql.DB {
-	db, err := sql.Open("sqlite3
+	db, err := sql.Open("sqlite3", filepath)
+	if err != nil || db == nil {
+		panic("Error connecting to database")
+	}
+
+	
