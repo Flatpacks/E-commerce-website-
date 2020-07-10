@@ -13,4 +13,8 @@ func Initialize(filepath string) *sql.DB {
 		panic("Error connecting to database")
 	}
 
-	
+	return db
+}
+
+// Migrate migrates the database
+func Migrate(d
