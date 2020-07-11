@@ -23,4 +23,10 @@ func Migrate(db *sql.DB) {
                     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 					crypto TEXT NOT NULL,
                     price FLOAT NOT NULL,
-                    direction BOOLEAN NOT 
+                    direction BOOLEAN NOT NULL
+            );
+       `
+
+	_, err := db.Exec(sql)
+	if err != nil {
+		panic(er
