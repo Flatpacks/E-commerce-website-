@@ -20,4 +20,5 @@ func Initialize(filepath string) *sql.DB {
 func Migrate(db *sql.DB) {
 	sql := `
             CREATE TABLE IF NOT EXISTS alerts(
-                  
+                    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+					crypto TEXT NOT NU
