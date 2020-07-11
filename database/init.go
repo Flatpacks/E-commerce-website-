@@ -17,4 +17,7 @@ func Initialize(filepath string) *sql.DB {
 }
 
 // Migrate migrates the database
-func Migrate(d
+func Migrate(db *sql.DB) {
+	sql := `
+            CREATE TABLE IF NOT EXISTS alerts(
+                  
