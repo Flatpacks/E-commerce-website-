@@ -9,4 +9,5 @@ require (
 
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
-	
+	github.com/cespare/xxhash/v2 v2.1.2 // indirect
+	github.com/dgrij
