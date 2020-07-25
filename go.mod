@@ -4,4 +4,9 @@ go 1.17
 
 require (
 	github.com/labstack/echo v3.3.10+incompatible
-	github.com/mattn/go-sqlite3 v1.1
+	github.com/mattn/go-sqlite3 v1.14.11
+)
+
+require (
+	github.com/BurntSushi/toml v0.3.1 // indirect
+	
