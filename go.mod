@@ -22,4 +22,6 @@ require (
 	github.com/mattn/go-colorable v0.1.11 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
-	github.com/pkg/errors v
+	github.com/pkg/errors v0.8.1 // indirect
+	github.com/thoas/bokchoy v0.2.1 // indirect
+	github.com/thoa
