@@ -24,4 +24,5 @@ require (
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/thoas/bokchoy v0.2.1 // indirect
-	github.com/thoa
+	github.com/thoas/go-funk v0.4.0 // indirect
+	github.com/valyala/bytebufferpool v1.0.0
