@@ -25,4 +25,6 @@ require (
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/thoas/bokchoy v0.2.1 // indirect
 	github.com/thoas/go-funk v0.4.0 // indirect
-	github.com/valyala/bytebufferpool v1.0.0
+	github.com/valyala/bytebufferpool v1.0.0 // indirect
+	github.com/valyala/fasttemplate v1.2.1 // indirect
+	go.uber.org/atomic v1.
