@@ -27,4 +27,6 @@ require (
 	github.com/thoas/go-funk v0.4.0 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasttemplate v1.2.1 // indirect
-	go.uber.org/atomic v1.
+	go.uber.org/atomic v1.5.0 // indirect
+	go.uber.org/multierr v1.3.0 // indirect
+	go.uber.org/t
