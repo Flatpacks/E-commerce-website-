@@ -31,4 +31,6 @@ require (
 	go.uber.org/multierr v1.3.0 // indirect
 	go.uber.org/tools v0.0.0-20190618225709-2cfd321de3ee // indirect
 	go.uber.org/zap v1.12.0 // indirect
-	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // in
+	golang.org/x/crypto v0.0.0-20220214200702-86341886e292 // indirect
+	golang.org/x/lint v0.0.0-20190930215403-16217165b5de // indirect
+	golang.org/x
