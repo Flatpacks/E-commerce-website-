@@ -128,4 +128,5 @@ github.com/labstack/echo v3.3.10+incompatible h1:pGRcYk231ExFAyoAjAfD85kQzRJCRI8
 github.com/labstack/echo v3.3.10+incompatible/go.mod h1:0INS7j/VjnFxD4E2wkz67b8cVwCLbBmJyDaka6Cmk1s=
 github.com/labstack/echo/v4 v4.1.11/go.mod h1:i541M3Fj6f76NZtHSj7TXnyM8n2gaodfvfxNnFqi74g=
 github.com/labstack/echo/v4 v4.6.3 h1:VhPuIZYxsbPmo4m9KAkMU/el2442eB7EBFFhNTTT9ac=
-github.com/labstack/echo/v4 v4.6.3/go.mod h1:Hk
+github.com/labstack/echo/v4 v4.6.3/go.mod h1:Hk5OiHj0kDqmFq7aHe7eDqI7CUhuCrfpupQtLGGLm7A=
+github.com/labs
