@@ -201,4 +201,5 @@ github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5Cc
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/thoas/bokchoy v0.2.1 h1:Z2dQM+kr5F68rjhlRp2HCdTaa8MY7JdJ+4YZeswf/Ic=
 github.com/thoas/bokchoy v0.2.1/go.mod h1:f9AOLNTcXZ1jLFNLnc52SoL5NVS6qbGJCEJsPQMqgn8=
-github.com/thoas/go-funk v0.4.0 h1:KBaa5NL7N
+github.com/thoas/go-funk v0.4.0 h1:KBaa5NL7NMtsFlQaD8nQMbDt1wuM+OOaNQyYNYQFhVo=
+github.com/thoas/go-funk v0.4.0/go.
