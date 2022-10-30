@@ -79,3 +79,25 @@ func GetAlerts(db *sql.DB) ([]*Alert, error) {
 	for rows.Next() {
 		alert := new(Alert)
 		err := rows.Scan(&alert.ID, &alert.Crypto, &alert.Price, &alert.Direction)
+		if err != nil {
+			return nil, err
+		}
+		alerts = append(alerts, alert)
+	}
+	return alerts, nil
+}
+
+func UpdateAlert(db *sql.DB, alert *Alert) (*Alert, error) {
+	// Update alert in database
+	sql := `
+		UPDATE alerts
+		SET price = ?, direction = ?
+		WHERE id = ?
+		`
+	_, err := db.Exec(sql, alert.Price, alert.Direction, alert.ID)
+	if err != nil {
+		log.Debug(err)
+		return nil, errors.New("Alert Update Failed")
+	}
+	return alert, nil
+}
