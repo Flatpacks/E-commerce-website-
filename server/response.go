@@ -11,4 +11,8 @@ const (
 type Response struct {
 	Code    int         `json:"code"`
 	Data    interface{} `json:"data"`
-	Message string      `json:"messag
+	Message string      `json:"message"`
+}
+
+func NewSuccessResponse(data interface{}) *Response {
+	return &Response{
