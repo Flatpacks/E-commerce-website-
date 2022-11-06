@@ -10,4 +10,5 @@ const (
 
 type Response struct {
 	Code    int         `json:"code"`
-	D
+	Data    interface{} `json:"data"`
+	Message string      `json:"messag
