@@ -16,3 +16,10 @@ type Response struct {
 
 func NewSuccessResponse(data interface{}) *Response {
 	return &Response{
+		Code:    0,
+		Data:    data,
+		Message: "success",
+	}
+}
+
+func NewE
