@@ -24,4 +24,10 @@ func NewSuccessResponse(data interface{}) *Response {
 
 func NewErrorResponse(code int, message string) *Response {
 	return &Response{
-		Code:    cod
+		Code:    code,
+		Message: message,
+		Data:    nil,
+	}
+}
+
+func NewInvalidDataErrorRespon
