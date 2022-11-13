@@ -22,4 +22,6 @@ func NewSuccessResponse(data interface{}) *Response {
 	}
 }
 
-func NewE
+func NewErrorResponse(code int, message string) *Response {
+	return &Response{
+		Code:    cod
