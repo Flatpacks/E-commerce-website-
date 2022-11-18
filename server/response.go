@@ -30,4 +30,8 @@ func NewErrorResponse(code int, message string) *Response {
 	}
 }
 
-func NewInvalidDataErrorRespon
+func NewInvalidDataErrorResponse() *Response {
+	return NewErrorResponse(CodeInvalidDataError, "Invalid data")
+}
+
+func Ne
