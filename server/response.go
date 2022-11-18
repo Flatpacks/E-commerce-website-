@@ -34,4 +34,5 @@ func NewInvalidDataErrorResponse() *Response {
 	return NewErrorResponse(CodeInvalidDataError, "Invalid data")
 }
 
-func Ne
+func NewParseRequestErrorResponse() *Response {
+	return NewErrorResponse
