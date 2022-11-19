@@ -38,4 +38,5 @@ func NewParseRequestErrorResponse() *Response {
 	return NewErrorResponse(CodeParseRequestError, "Parse request error")
 }
 
-func NewDataNotFoun
+func NewDataNotFoundErrorResponse() *Response {
+	return NewErrorResponse(CodeDataNotFoundError, "Data
