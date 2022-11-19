@@ -35,4 +35,7 @@ func NewInvalidDataErrorResponse() *Response {
 }
 
 func NewParseRequestErrorResponse() *Response {
-	return NewErrorResponse
+	return NewErrorResponse(CodeParseRequestError, "Parse request error")
+}
+
+func NewDataNotFoun
