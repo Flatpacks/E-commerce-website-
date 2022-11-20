@@ -39,4 +39,8 @@ func NewParseRequestErrorResponse() *Response {
 }
 
 func NewDataNotFoundErrorResponse() *Response {
-	return NewErrorResponse(CodeDataNotFoundError, "Data
+	return NewErrorResponse(CodeDataNotFoundError, "Data not found")
+}
+
+func NewInternalErrorResponse() *Response {
+	return 
