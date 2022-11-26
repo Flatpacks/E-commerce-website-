@@ -43,4 +43,5 @@ func NewDataNotFoundErrorResponse() *Response {
 }
 
 func NewInternalErrorResponse() *Response {
-	return 
+	return NewErrorResponse(CodeInternalErr, "Internal error")
+}
