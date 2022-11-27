@@ -6,4 +6,8 @@ import (
 
 	"github.com/go-redis/redis"
 	"github.com/jerryan999/CryptoAlert/model"
-	"github.com/jerryan999/CryptoAlert/
+	"github.com/jerryan999/CryptoAlert/utils"
+	"github.com/labstack/gommon/log"
+)
+
+type AlertService struct {
