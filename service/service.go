@@ -11,3 +11,8 @@ import (
 )
 
 type AlertService struct {
+	db  *sql.DB
+	rdb *redis.Client
+}
+
+func NewAlertService(db *sql.DB, rdb *redi
