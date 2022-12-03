@@ -15,4 +15,8 @@ type AlertService struct {
 	rdb *redis.Client
 }
 
-func NewAlertService(db *sql.DB, rdb *redi
+func NewAlertService(db *sql.DB, rdb *redis.Client) *AlertService {
+	return &AlertService{db: db, rdb: rdb}
+}
+
+func (s
