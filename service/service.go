@@ -19,4 +19,5 @@ func NewAlertService(db *sql.DB, rdb *redis.Client) *AlertService {
 	return &AlertService{db: db, rdb: rdb}
 }
 
-func (s
+func (s *AlertService) GetAlertByID(id int64) (*model.Alert, error) {
+	return 
