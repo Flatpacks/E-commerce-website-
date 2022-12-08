@@ -23,4 +23,5 @@ func (s *AlertService) GetAlertByID(id int64) (*model.Alert, error) {
 	return model.GetAlertByID(s.db, id)
 }
 
-func (s *AlertService) AddAlert(al
+func (s *AlertService) AddAlert(alert *model.Alert) (*model.Alert, error) {
+	// Add alert to data
