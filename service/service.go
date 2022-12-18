@@ -32,4 +32,7 @@ func (s *AlertService) AddAlert(alert *model.Alert) (*model.Alert, error) {
 	log.Info("Alert saved to DB")
 
 	// save alert to redis sorted set
-	key := utils.GetAlertQueueKey(alert.Crypto, alert
+	key := utils.GetAlertQueueKey(alert.Crypto, alert.Direction)
+	s.rdb.ZAdd(key, redis.Z{
+		Score:  alert.Price,
+		Member: 
