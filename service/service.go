@@ -27,4 +27,6 @@ func (s *AlertService) AddAlert(alert *model.Alert) (*model.Alert, error) {
 	// Add alert to database
 	alert, err := model.SaveAlert(s.db, alert)
 	if err != nil {
-		ret
+		return alert, errors.New("saving alert to DB Failed")
+	}
+	log.Info("Alert saved
