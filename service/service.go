@@ -29,4 +29,7 @@ func (s *AlertService) AddAlert(alert *model.Alert) (*model.Alert, error) {
 	if err != nil {
 		return alert, errors.New("saving alert to DB Failed")
 	}
-	log.Info("Alert saved
+	log.Info("Alert saved to DB")
+
+	// save alert to redis sorted set
+	key := utils.GetAlertQueueKey(alert.Crypto, alert
