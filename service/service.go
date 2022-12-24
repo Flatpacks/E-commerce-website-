@@ -44,4 +44,8 @@ func (s *AlertService) AddAlert(alert *model.Alert) (*model.Alert, error) {
 
 func (s *AlertService) RemoveAlert(alert *model.Alert) (*model.Alert, error) {
 	// Remove alert from database
-	alert, err := model.RemoveAlert(s.db
+	alert, err := model.RemoveAlert(s.db, alert.ID)
+	if err != nil {
+		return alert, nil
+	}
+	log.Info("Alert remov
