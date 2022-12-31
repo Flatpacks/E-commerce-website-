@@ -51,4 +51,6 @@ func (s *AlertService) RemoveAlert(alert *model.Alert) (*model.Alert, error) {
 	log.Info("Alert removed from DB")
 
 	// remove alert from redis sortedset
-	key := utils.GetAlertQueueK
+	key := utils.GetAlertQueueKey(alert.Crypto, alert.Direction)
+	s.rdb.ZRem(key, alert.ID)
+	log.Info
