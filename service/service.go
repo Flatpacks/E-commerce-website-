@@ -58,4 +58,5 @@ func (s *AlertService) RemoveAlert(alert *model.Alert) (*model.Alert, error) {
 
 }
 
-func (s *AlertSer
+func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
+	// Update alert i
