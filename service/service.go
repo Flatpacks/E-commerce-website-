@@ -59,4 +59,7 @@ func (s *AlertService) RemoveAlert(alert *model.Alert) (*model.Alert, error) {
 }
 
 func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
-	// Update alert i
+	// Update alert in database
+	_, err := model.UpdateAlert(s.db, alert)
+	if err != nil {
+		re
