@@ -62,4 +62,6 @@ func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
 	// Update alert in database
 	_, err := model.UpdateAlert(s.db, alert)
 	if err != nil {
-		re
+		return alert, errors.New("updating alert in DB Failed")
+	}
+	log.Info("Alert update in
