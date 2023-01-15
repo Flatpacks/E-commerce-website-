@@ -64,4 +64,7 @@ func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
 	if err != nil {
 		return alert, errors.New("updating alert in DB Failed")
 	}
-	log.Info("Alert update in
+	log.Info("Alert update into DB")
+
+	// Update alert in redis sortedset
+	key := utils.GetAlertQueueKey
