@@ -69,4 +69,7 @@ func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
 	// Update alert in redis sortedset
 	key := utils.GetAlertQueueKey(alert.Crypto, alert.Direction)
 	s.rdb.ZAdd(key, redis.Z{
-		Score:  a
+		Score:  alert.Price,
+		Member: alert.ID,
+	})
+	log.Info("Alert update into redis")
