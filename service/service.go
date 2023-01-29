@@ -73,3 +73,8 @@ func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
 		Member: alert.ID,
 	})
 	log.Info("Alert update into redis")
+
+	return alert, nil
+}
+
+func (s *AlertService) GetAlerts() ([]*model.Alert, error)
