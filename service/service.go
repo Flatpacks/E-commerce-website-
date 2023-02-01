@@ -77,4 +77,7 @@ func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
 	return alert, nil
 }
 
-func (s *AlertService) GetAlerts() ([]*model.Alert, error)
+func (s *AlertService) GetAlerts() ([]*model.Alert, error) {
+	// Get alerts from database
+	alerts, err := model.GetAlerts(s.db)
+	if e
