@@ -80,4 +80,6 @@ func (s *AlertService) UpdateAlert(alert *model.Alert) (*model.Alert, error) {
 func (s *AlertService) GetAlerts() ([]*model.Alert, error) {
 	// Get alerts from database
 	alerts, err := model.GetAlerts(s.db)
-	if e
+	if err != nil {
+		return alerts, errors.New("getting alerts from DB Failed")
+	}
