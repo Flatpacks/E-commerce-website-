@@ -83,3 +83,6 @@ func (s *AlertService) GetAlerts() ([]*model.Alert, error) {
 	if err != nil {
 		return alerts, errors.New("getting alerts from DB Failed")
 	}
+
+	return alerts, nil
+}
