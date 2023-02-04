@@ -51,3 +51,31 @@ func SendEmailWorker() {
 }
 
 func PushRequest(payload interface{}) {
+	// Producer
+	var ctx context.Context
+	task, err := engine.Queue(QUEUE_KEY_SEND_EAMIL).Publish(ctx, payload)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Info(task, "has been published")
+
+}
+
+func init() {
+	var err error
+	var ctx context.Context
+	engine, err = bokchoy.New(ctx, bokchoy.Config{
+		Broker: bokchoy.BrokerConfig{
+			Type: "redis",
+			Redis: bokchoy.RedisConfig{
+				Type: "client",
+				Client: bokchoy.RedisClientConfig{
+					Addr: QUEUE_ADDR_SEND_EMAIL,
+				},
+			},
+		},
+	})
+	if err != nil {
+		log.Fatal(err)
+	}
+}
