@@ -7,4 +7,7 @@ import (
 	"github.com/go-redis/redis/v8"
 	"github.com/gorilla/websocket"
 	"github.com/jerryan999/CryptoAlert/utils"
-	"gith
+	"github.com/labstack/gommon/log"
+)
+
+var QUEUE_KEY_WATCH_CRYPTO = "tasks
