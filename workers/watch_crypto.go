@@ -10,4 +10,8 @@ import (
 	"github.com/labstack/gommon/log"
 )
 
-var QUEUE_KEY_WATCH_CRYPTO = "tasks
+var QUEUE_KEY_WATCH_CRYPTO = "tasks.send_email"
+var QUEUE_ADDR_WATCH_CRYPTO = "localhost:6379"
+
+// redis
+var rdb 
