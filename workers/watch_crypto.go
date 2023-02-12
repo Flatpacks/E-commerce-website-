@@ -19,4 +19,7 @@ var rdb *redis.Client
 func WatchCryptoWorker() {
 	ctx := context.TODO()
 
-	// we only c
+	// we only care about crypto here
+	crypto := "bitcoin"
+
+	conn, _, err := websocket.DefaultDiale
