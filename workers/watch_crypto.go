@@ -22,4 +22,6 @@ func WatchCryptoWorker() {
 	// we only care about crypto here
 	crypto := "bitcoin"
 
-	conn, _, err := websocket.DefaultDiale
+	conn, _, err := websocket.DefaultDialer.Dial("wss://ws.coincap.io/prices?assets="+crypto, nil)
+	if err != nil {
+		log
