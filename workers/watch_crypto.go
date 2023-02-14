@@ -24,4 +24,9 @@ func WatchCryptoWorker() {
 
 	conn, _, err := websocket.DefaultDialer.Dial("wss://ws.coincap.io/prices?assets="+crypto, nil)
 	if err != nil {
-		log
+		log.Fatal(err)
+	}
+
+	// read from the websocket
+	for {
+		_, mes
