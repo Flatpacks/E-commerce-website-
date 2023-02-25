@@ -42,4 +42,5 @@ func WatchCryptoWorker() {
 		currentPrice := data[crypto]
 
 		// Get alert key
-		key_price_gt := utils.GetAlertQueu
+		key_price_gt := utils.GetAlertQueueKey(crypto, true)
+		key_price_lt := utils.GetAlertQueueKey(crypto, fals
