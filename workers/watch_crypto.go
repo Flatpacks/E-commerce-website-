@@ -39,4 +39,7 @@ func WatchCryptoWorker() {
 		log.Info("Got data from websocket:", data)
 
 		// get the price
-		currentPrice :=
+		currentPrice := data[crypto]
+
+		// Get alert key
+		key_price_gt := utils.GetAlertQueu
