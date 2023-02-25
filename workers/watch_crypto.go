@@ -29,4 +29,8 @@ func WatchCryptoWorker() {
 
 	// read from the websocket
 	for {
-		_, mes
+		_, message, err := conn.ReadMessage()
+		if err != nil {
+			break
+		}
+		// parse the js
