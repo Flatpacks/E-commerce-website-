@@ -33,4 +33,7 @@ func WatchCryptoWorker() {
 		if err != nil {
 			break
 		}
-		// parse the js
+		// parse the json message
+		var data map[string]string
+		json.Unmarshal(message, &data)
+		log.Info
