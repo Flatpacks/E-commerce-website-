@@ -36,4 +36,7 @@ func WatchCryptoWorker() {
 		// parse the json message
 		var data map[string]string
 		json.Unmarshal(message, &data)
-		log.Info
+		log.Info("Got data from websocket:", data)
+
+		// get the price
+		currentPrice :=
