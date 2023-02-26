@@ -43,4 +43,7 @@ func WatchCryptoWorker() {
 
 		// Get alert key
 		key_price_gt := utils.GetAlertQueueKey(crypto, true)
-		key_price_lt := utils.GetAlertQueueKey(crypto, fals
+		key_price_lt := utils.GetAlertQueueKey(crypto, false)
+
+		// Get alert ids which needs to be sent
+		res := rdb.ZRangeByScore(ctx, key_pri
