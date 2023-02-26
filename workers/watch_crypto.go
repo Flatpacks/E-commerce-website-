@@ -51,4 +51,5 @@ func WatchCryptoWorker() {
 			Max: currentPrice,
 		}).Val()
 
-	
+		// remove the alert from redis
+		// convert []string to []interface{} fir
