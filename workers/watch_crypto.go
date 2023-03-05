@@ -52,4 +52,7 @@ func WatchCryptoWorker() {
 		}).Val()
 
 		// remove the alert from redis
-		// convert []string to []interface{} fir
+		// convert []string to []interface{} first
+		members := make([]interface{}, len(res))
+		for i, v := range res {
+		
