@@ -55,4 +55,8 @@ func WatchCryptoWorker() {
 		// convert []string to []interface{} first
 		members := make([]interface{}, len(res))
 		for i, v := range res {
-		
+			members[i] = v
+		}
+		rdb.ZRem(ctx, key_price_gt, members...)
+
+		// add
