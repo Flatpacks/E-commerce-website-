@@ -59,4 +59,6 @@ func WatchCryptoWorker() {
 		}
 		rdb.ZRem(ctx, key_price_gt, members...)
 
-		// add
+		// add to send email queue
+		for _, v := range res {
+			PushRequest(map[string
