@@ -61,4 +61,5 @@ func WatchCryptoWorker() {
 
 		// add to send email queue
 		for _, v := range res {
-			PushRequest(map[string
+			PushRequest(map[string]interface{}{"id": v, "price": currentPrice, "crypto": crypto, "direction": 0})
+	
