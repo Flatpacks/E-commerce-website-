@@ -65,4 +65,9 @@ func WatchCryptoWorker() {
 		}
 
 		res = rdb.ZRangeByScore(ctx, key_price_lt, &redis.ZRangeBy{
-			Min: 
+			Min: currentPrice,
+			Max: "inf",
+		}).Val()
+
+		// remove the alert from redis
+	
