@@ -62,4 +62,7 @@ func WatchCryptoWorker() {
 		// add to send email queue
 		for _, v := range res {
 			PushRequest(map[string]interface{}{"id": v, "price": currentPrice, "crypto": crypto, "direction": 0})
-	
+		}
+
+		res = rdb.ZRangeByScore(ctx, key_price_lt, &redis.ZRangeBy{
+			Min: 
