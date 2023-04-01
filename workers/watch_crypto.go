@@ -70,4 +70,5 @@ func WatchCryptoWorker() {
 		}).Val()
 
 		// remove the alert from redis
-	
+		// convert []string to []interface{} first
+		members = make([]interface{
