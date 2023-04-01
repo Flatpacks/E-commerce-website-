@@ -79,4 +79,10 @@ func WatchCryptoWorker() {
 
 		// remove the alert from redis
 		for _, v := range res {
-			PushRequest(map[string]interface{}{"id": v, "price": 
+			PushRequest(map[string]interface{}{"id": v, "price": currentPrice, "crypto": crypto, "direction": 1})
+		}
+	}
+}
+
+func init() {
+	rdb = redis.Ne
