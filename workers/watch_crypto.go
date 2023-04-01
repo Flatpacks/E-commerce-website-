@@ -78,4 +78,5 @@ func WatchCryptoWorker() {
 		rdb.ZRem(ctx, key_price_lt, members...)
 
 		// remove the alert from redis
-		for _, v :=
+		for _, v := range res {
+			PushRequest(map[string]interface{}{"id": v, "price": 
