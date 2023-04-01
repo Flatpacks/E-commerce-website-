@@ -71,4 +71,8 @@ func WatchCryptoWorker() {
 
 		// remove the alert from redis
 		// convert []string to []interface{} first
-		members = make([]interface{
+		members = make([]interface{}, len(res))
+		for i, v := range res {
+			members[i] = v
+		}
+		rdb.ZRem(ctx, 
