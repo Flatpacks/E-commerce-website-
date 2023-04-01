@@ -75,4 +75,7 @@ func WatchCryptoWorker() {
 		for i, v := range res {
 			members[i] = v
 		}
-		rdb.ZRem(ctx, 
+		rdb.ZRem(ctx, key_price_lt, members...)
+
+		// remove the alert from redis
+		for _, v :=
