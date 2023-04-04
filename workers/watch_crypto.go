@@ -85,4 +85,7 @@ func WatchCryptoWorker() {
 }
 
 func init() {
-	rdb = redis.Ne
+	rdb = redis.NewClient(&redis.Options{
+		Addr: QUEUE_ADDR_WATCH_CRYPTO,
+	})
+}
